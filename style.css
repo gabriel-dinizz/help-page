@@ -126,6 +126,7 @@ footer {
 footer > div {
   flex: 1; /* Make each child div take equal width */
   margin: 0 10px; /* Add horizontal spacing between child divs */
+  margin: 0px;
 }
 
 footer > div > div {
