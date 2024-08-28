@@ -119,20 +119,20 @@ main {
 footer {
   background-color: #f8f8f8; /* Light background color */
   padding: 20px 50px; /* Padding around the footer */
-  display: flex; /* Flexbox for horizontal layout */
-  justify-content: space-around; /* Space between each section */
+  display: flex; /* Use flexbox to layout child elements */
+  justify-content: space-between; /* Distribute space between child elements */
 }
 
-footer div {
-  flex: 1; /* Ensures each section takes equal space */
-  margin: 0 20px; /* Adds space between sections */
+footer > div {
+  flex: 1; /* Make each child div take equal width */
+  margin: 0 10px; /* Add horizontal spacing between child divs */
+}
+
+footer > div > div {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 footer p {
-  margin: 5px 0;
-}
-
-footer div > div {
-  font-weight: bold;
-  margin-bottom: 10px;
+  margin: 5px 0; /* Correct margin value */
 }
