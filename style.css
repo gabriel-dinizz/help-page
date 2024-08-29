@@ -5,8 +5,8 @@
 
 header {
   display: flex;
-  justify-content: space-between; /* Spreads out the content between left and right */
-  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   background-color: #000;
   border-radius: 15px;
@@ -26,10 +26,10 @@ p {
 }
 
 .buttons {
-  padding-top: 0; /* Remove the top padding */
-  padding-left: 0; /* Remove the left padding */
+  padding-top: 0;
+  padding-left: 0;
   display: flex;
-  gap: 10px; /* Adds space between the buttons */
+  gap: 10px;
   padding: 20px 40px;
   font-size: 18px;
   width: 250px;
@@ -62,78 +62,76 @@ p {
 }
 .styled-input {
   width: 100%;
-  max-width: 600px; /* Adjust the max-width as needed */
-  padding: 15px 20px; /* Padding inside the input */
-  font-size: 18px; /* Font size for the text */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid #000; /* Border color and width */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  outline: none; /* Removes the default outline */
+  max-width: 600px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .styled-input::placeholder {
-  color: #bbb; /* Placeholder text color */
+  color: #bbb;
 }
 
 .styled-input:focus {
-  border-color: #000; /* Border color on focus */
+  border-color: #000;
 }
 
 .styled-input[type="text"]::-webkit-search-cancel-button {
-  -webkit-appearance: none; /* Hides the default clear button */
+  -webkit-appearance: none;
 }
 
 .styled-input::-webkit-input-placeholder {
-  font-weight: 400; /* Placeholder weight */
+  font-weight: 400;
 }
 
-/* Optional arrow icon styling */
 .styled-input {
   background: url("curved-arrow.png") no-repeat right 20px center;
-  background-size: 15px 15px; /* Adjust the size of the arrow icon */
+  background-size: 15px 15px;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allows the items to wrap to the next line */
-  justify-content: center; /* Centers the items horizontally */
-  margin-top: 200px; /* Moves the items closer to the bottom */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 .items {
-  width: 45%; /* Each item takes about half the width of the container */
+  width: 45%;
   margin: 10px;
   font-size: 24px;
   text-align: center;
 }
 
-/* Adjust the main section to push the content down */
 main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 70vh; /* Sets the height of the main section */
+  height: 70vh;
   margin-top: 50px;
 }
 
 footer {
-  background-color: #f8f8f8; /* Light background color */
-  padding: 20px 50px; /* Padding around the footer */
-  display: flex; /* Use flexbox to layout child elements */
-  justify-content: space-between; /* Distribute space between child elements */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: white;
 }
 
-footer > div {
-  flex: 1; /* Make each child div take equal width */
-  margin: 0 10px; /* Add horizontal spacing between child divs */
-  margin: 0px;
+footer div {
+  flex: 1;
+  margin: 0 10px;
 }
 
-footer > div > div {
+footer div div {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 footer p {
-  margin: 5px 0; /* Correct margin value */
+  margin: 5px 0;
 }
