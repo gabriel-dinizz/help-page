@@ -1,8 +1,13 @@
-* {
-  text-align: center;
+/* Global Styles */
+body, html {
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -10,56 +15,23 @@ header {
   padding: 0 20px;
   background-color: #000;
   border-radius: 15px;
-  margin-bottom: 0;
   color: #fff;
 }
 
+/* Navigation Styles */
 nav {
   background-color: #dadbf1;
-  padding: 10px 0px;
+  padding: 10px 0;
   margin: 0;
   height: calc(40vh - 100px);
 }
 
-p {
-  font-size: 25px;
-}
-
-.buttons {
-  padding-top: 0;
-  padding-left: 0;
-  display: flex;
-  gap: 10px;
-  padding: 20px 40px;
-  font-size: 18px;
-  width: 250px;
-  height: 60px;
-  border-radius: 15px;
-}
-
-.submit {
-  background-color: black;
-  border-radius: 10px;
-  width: 140px;
-  height: 50px;
-  color: #fff;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sign-in {
-  background-color: blue;
-  border-radius: 10px;
-  width: 140px;
-  height: 50px;
-  color: #fff;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+/* Title Styles */
 .title {
   font-size: 75px;
 }
+
+/* Input Styles */
 .styled-input {
   width: 100%;
   max-width: 600px;
@@ -69,6 +41,8 @@ p {
   border: 1px solid #000;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   outline: none;
+  background: url("curved-arrow.png") no-repeat right 20px center;
+  background-size: 15px 15px;
 }
 
 .styled-input::placeholder {
@@ -83,15 +57,30 @@ p {
   -webkit-appearance: none;
 }
 
-.styled-input::-webkit-input-placeholder {
-  font-weight: 400;
+/* Buttons Styles */
+.buttons {
+  display: flex;
+  gap: 10px;
 }
 
-.styled-input {
-  background: url("curved-arrow.png") no-repeat right 20px center;
-  background-size: 15px 15px;
+.btn {
+  border-radius: 10px;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  font-size: large;
+  font-family: inherit;
 }
 
+.submit {
+  background-color: black;
+}
+
+.sign-in {
+  background-color: blue;
+}
+
+/* Container and Item Styles */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -103,9 +92,9 @@ p {
   width: 45%;
   margin: 10px;
   font-size: 20px;
-  text-align: center;
 }
 
+/* Main Section Styles */
 main {
   display: flex;
   justify-content: center;
@@ -114,6 +103,7 @@ main {
   margin-top: 50px;
 }
 
+/* Footer Styles */
 footer {
   display: flex;
   justify-content: space-between;
@@ -134,9 +124,5 @@ footer div div {
 
 footer p {
   margin: 5px 0;
-}
-
-p{
   font-size: 20px;
-
 }
